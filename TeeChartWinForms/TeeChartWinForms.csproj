@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TeeChart.licenses" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TeeChart.licenses" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TeeChartLibrary\TeeChartLibrary.csproj" />
   </ItemGroup>
 

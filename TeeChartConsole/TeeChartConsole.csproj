@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TeeChart.licenses" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TeeChart.licenses" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TeeChartLibrary\TeeChartLibrary.csproj" />
